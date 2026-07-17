@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menalkerim Abduljebar | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active {
+            border-color: #4f46e5;
+            color: #4f46e5;
+            background-color: #f5f3ff;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight text-slate-900">
+                Menalkerim <span class="text-indigo-600">Abduljebar</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                <a href="#portfolio" class="hover:text-indigo-600 transition">Pillars of Work</a>
+                <a href="#education" class="hover:text-indigo-600 transition">Education & Credentials</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+<a href="https://drive.google.com/uc?export=download&id=1iD0-HxSZIlSXqiuk8NafaCuSN8C6IH6v"
+   download
+   class="hover:text-indigo-600 transition">
+    Download CV
+</a>            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7 space-y-6">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">
+                DVM Student & Computer Scientist
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                Bridging Health, Technology, and Community Leadership.
+            </h1>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                Hi, I'm <strong>Menalkerim Abduljebar Muhammed Abdullah</strong>. I pursue two distinct yet powerful disciplines: Veterinary Medicine at Addis Ababa University and Computer Science at Admas University. Alongside my studies, I lead community growth as the founder of Allcan Development Center.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#portfolio" class="px-6 py-3 bg-indigo-600 text-white rounded-lg font-medium shadow-sm hover:bg-indigo-700 transition">
+                    Explore My Work
+                </a>
+                <a href="#contact" class="px-6 py-3 border border-slate-300 text-slate-700 rounded-lg font-medium hover:bg-slate-50 transition">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+        <div class="md:col-span-5 flex justify-center">
+            <!-- Profile Image Placeholder -->
+            <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-slate-200">
+                <img src="C:\Users\Telegram Desktop\computer science\menalkerim practice\image\menalkerim.jpg" alt="Menalkerim Abduljebar" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Portfolio Switcher -->
+    <section id="portfolio" class="bg-white py-20 border-t border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Professional Portfolios</h2>
+                <p class="text-slate-600 mt-2">Select a tab below to explore my practical experience across veterinary science, software engineering, and community leadership.</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 border-b border-slate-200 pb-px">
+                <button onclick="switchTab('veterinary')" class="tab-btn active px-5 py-3 border-b-2 border-transparent font-semibold text-slate-500 hover:text-slate-900 transition flex items-center gap-2">
+                    <i class="fa-solid fa-stethoscope"></i> Veterinary Medicine
+                </button>
+                <button onclick="switchTab('compsci')" class="tab-btn px-5 py-3 border-b-2 border-transparent font-semibold text-slate-500 hover:text-slate-900 transition flex items-center gap-2">
+                    <i class="fa-solid fa-code"></i> Computer Science
+                </button>
+                <button onclick="switchTab('allcan')" class="tab-btn px-5 py-3 border-b-2 border-transparent font-semibold text-slate-500 hover:text-slate-900 transition flex items-center gap-2">
+                    <i class="fa-solid fa-briefcase"></i> Allcan Development Center
+                </button>
+            </div>
+
+            <!-- TAB 1: VETERINARY MEDICINE -->
+            <div id="veterinary" class="tab-content active space-y-12">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900">Doctor of Veterinary Medicine (DVM)</h3>
+                        <p class="text-indigo-600 font-medium">Addis Ababa University</p>
+                        <p class="text-slate-600 mt-4 leading-relaxed">
+                            My veterinary education goes beyond theory. I focus heavily on practical application, diagnostics, clinical diagnosis, and field interaction to support animal healthcare standards.
+                        </p>
+                    </div>
+                    <div class="bg-indigo-50/50 p-6 rounded-2xl border border-indigo-100 flex flex-col justify-center">
+                        <span class="text-xs font-semibold text-indigo-700 uppercase tracking-wider">Key Focus Areas</span>
+                        <ul class="mt-3 space-y-2 text-slate-700">
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i> Clinical Diagnostics & Surgery</li>
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i> Microbiological Laboratory Analysis</li>
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i> Preventive Medicine & Outbreak Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Visual Partitions for DVM -->
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Practice 1: Lab Class -->
+                    <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 group hover:shadow-md transition">
+                        <div class="h-48 bg-slate-200 relative overflow-hidden">
+                            <!-- Replace with actual Lab Practice photo -->
+                            <img src="" alt="Laboratory Class Practice" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <span class="absolute top-3 left-3 bg-slate-900/80 text-white text-xs px-2 py-1 rounded">Lab Practice</span>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="font-bold text-slate-900 mb-2">Laboratory Practice</h4>
+                            <p class="text-sm text-slate-600">Developing precision in microbiological staining, blood chemistry panels, parasite identification, and sample diagnostic analysis.</p>
+                        </div>
+                    </div>
+                    <!-- Practice 2: Clinic Place at Hospital -->
+                    <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 group hover:shadow-md transition">
+                        <div class="h-48 bg-slate-200 relative overflow-hidden">
+                            <!-- Replace with actual Clinical photo -->
+                            <img src="C:\Users\Telegram Desktop\computer science\menalkerim practice\image\lab.jpg" alt="Clinic Practice at Hospital" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <span class="absolute top-3 left-3 bg-slate-900/80 text-white text-xs px-2 py-1 rounded">Hospital Clinic</span>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="font-bold text-slate-900 mb-2">Clinical Experience</h4>
+                            <p class="text-sm text-slate-600">Assisting in clinical diagnoses, administering treatments to companion and large animal patients, and gaining direct client-communication experience.</p>
+                        </div>
+                    </div>
+                    <!-- Practice 3: Field Work -->
+                    <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-100 group hover:shadow-md transition">
+                        <div class="h-48 bg-slate-200 relative overflow-hidden">
+                            <!-- Replace with actual Field work photo -->
+                            <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=500&q=80" alt="Field Practice" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <span class="absolute top-3 left-3 bg-slate-900/80 text-white text-xs px-2 py-1 rounded">Field Work</span>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="font-bold text-slate-900 mb-2">Field Work & Extensions</h4>
+                            <p class="text-sm text-slate-600">Participating in mass vaccination programs, studying herd health on regional farms, and engaging with local pastoral communities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 2: COMPUTER SCIENCE -->
+            <div id="compsci" class="tab-content space-y-12">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900">Computer Science</h3>
+                        <p class="text-indigo-600 font-medium">Admas University</p>
+                        <p class="text-slate-600 mt-4 leading-relaxed">
+                            As a computer science student, I design solutions and study digital logic, system architecture, and modern programming languages. I aim to merge algorithmic design with real-world applications.
+                        </p>
+                    </div>
+                    <!-- Tech Stack badge area -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <span class="text-xs font-semibold text-indigo-700 uppercase tracking-wider">Technologies & Foundations</span>
+                        <div class="flex flex-wrap gap-2 mt-3">
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium">Python</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium">Java</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium">Data Structures</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium">Web Development</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-medium">Databases</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Coding Space interactive block -->
+                    <div class="bg-slate-950 text-slate-300 rounded-xl overflow-hidden font-mono shadow-lg border border-slate-800">
+                        <div class="bg-slate-900 px-4 py-2 border-b border-slate-800 flex justify-between items-center text-xs">
+                            <span class="text-slate-400">menalkerim_portfolio.py</span>
+                            <div class="flex space-x-1.5">
+                                <span class="w-3.5 h-3.5 rounded-full bg-red-500/80 inline-block"></span>
+                                <span class="w-3.5 h-3.5 rounded-full bg-yellow-500/80 inline-block"></span>
+                                <span class="w-3.5 h-3.5 rounded-full bg-green-500/80 inline-block"></span>
+                            </div>
+                        </div>
+                        <div class="p-5 text-sm leading-relaxed overflow-x-auto">
+                            <pre><code class="text-green-400">class Developer:
+    def __init__(self, name, passion):
+        self.name = name
+        self.passion = passion
+
+    def present_work(self):
+        print(f"Building software at Admas University.")
+        print(f"Applying logical models to complex problems.")
+
+me = Developer("Menalkerim Abduljebar", "CS & Bio-Tech")
+me.present_work()</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- System Memory & Architecture representation -->
+                    <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-memory text-indigo-600"></i> Architecture & Memory Representation
+                            </h4>
+                            <p class="text-slate-600 text-sm">
+                                Designing software requires an understanding of hardware architecture, memory allocation, stack/heap structures, and algorithmic optimization.
+                            </p>
+                        </div>
+                        <!-- Memory abstraction visualizer -->
+                        <div class="grid grid-cols-4 gap-2 mt-4 text-center text-xs font-mono font-bold">
+                            <div class="p-3 bg-indigo-50 border border-indigo-200 rounded text-indigo-700">0x00FF<br><span class="text-[10px] font-normal text-slate-500">Stack</span></div>
+                            <div class="p-3 bg-indigo-50 border border-indigo-200 rounded text-indigo-700">0x01A2<br><span class="text-[10px] font-normal text-slate-500">Heap</span></div>
+                            <div class="p-3 bg-indigo-50 border border-indigo-200 rounded text-indigo-700">0x03B4<br><span class="text-[10px] font-normal text-slate-500">Data</span></div>
+                            <div class="p-3 bg-indigo-50 border border-indigo-200 rounded text-indigo-700">0x05E8<br><span class="text-[10px] font-normal text-slate-500">Text</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: ALLCAN DEVELOPMENT CENTER -->
+            <div id="allcan" class="tab-content space-y-12">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900">Allcan Development Center</h3>
+                        <p class="text-indigo-600 font-medium">Founder & Director</p>
+                        <p class="text-slate-600 mt-4 leading-relaxed">
+                            As the founder of Allcan Development Center, I lead an initiative divided into three specialized sectors to provide educational, digital, and value-based development in our community.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl flex flex-col justify-center">
+                        <h4 class="text-slate-900 font-semibold mb-2">Our Mission</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            To empower youth, provide digital services, build media outreach, and preserve religious and academic excellence through dedicated training and active project deployment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Three Sectors inside Allcan -->
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Sector 1: Media -->
+                    <div class="p-6 bg-white border border-slate-200 rounded-xl hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                            <i class="fa-solid fa-photo-film"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-2">Allcan Media</h4>
+                        <p class="text-sm text-slate-600">
+                            Driving our outreach through visual messaging, content production, social media management, and modern video/graphic production.
+                        </p>
+                    </div>
+
+                    <!-- Sector 2: Tech -->
+                    <div class="p-6 bg-white border border-slate-200 rounded-xl hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-2">Allcan Tech</h4>
+                        <p class="text-sm text-slate-600">
+                            Providing local digital solutions, website development, technical support, and introductory tech-literacy workshops for students.
+                        </p>
+                    </div>
+
+                    <!-- Sector 3: Islamic (Ayaturrahman Islamic Institute) -->
+                    <div class="p-6 bg-white border border-slate-200 rounded-xl hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                            <i class="fa-solid fa-mosque"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-emerald-700 uppercase tracking-wider block mb-1">Head of Section</span>
+                        <h4 class="font-bold text-slate-900 mb-2">Ayaturrahman Islamic Institute</h4>
+                        <p class="text-sm text-slate-600">
+                            Directing religious education curriculums, mentoring youth, and fostering values of balance, ethical responsibility, and faith-based community action.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certificates Section -->
+    <section id="education" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-12">
+            
+            <!-- Left: Education Path -->
+            <div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-8">Academic Milestones</h3>
+                <div class="space-y-8 relative border-l border-slate-200 pl-6 ml-2">
+                    
+                    <!-- Admas University -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] bg-indigo-600 text-white w-4 h-4 rounded-full border-4 border-white"></div>
+                        <span class="text-xs font-semibold text-slate-500">Current Study</span>
+                        <h4 class="font-bold text-slate-900 mt-1">B.Sc. in Computer Science</h4>
+                        <p class="text-indigo-600 text-sm">Admas University</p>
+                    </div>
+
+                    <!-- AAU -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] bg-indigo-600 text-white w-4 h-4 rounded-full border-4 border-white"></div>
+                        <span class="text-xs font-semibold text-slate-500">Current Study</span>
+                        <h4 class="font-bold text-slate-900 mt-1">Doctor of Veterinary Medicine (DVM)</h4>
+                        <p class="text-indigo-600 text-sm">Addis Ababa University</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Certifications & Volunteer Work -->
+            <div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-8">Leadership & Volunteering</h3>
+                <div class="space-y-4">
+                    <!-- Cert 1 -->
+                    <div class="p-4 bg-white border border-slate-200 rounded-lg flex items-start gap-4">
+                        <div class="p-2 bg-indigo-50 text-indigo-600 rounded">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-900">Leadership Excellence Certification</h4>
+                            <p class="text-sm text-slate-600">Honoring organizational strategy, community action, and development planning.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="p-4 bg-white border border-slate-200 rounded-lg flex items-start gap-4">
+                        <div class="p-2 bg-indigo-50 text-indigo-600 rounded">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-900">Volunteer Service Acknowledgments</h4>
+                            <p class="text-sm text-slate-600">Involved in youth mentoring, educational outreach initiatives, and public service campaigns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-slate-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold">Let's Connect</h2>
+                <p class="text-slate-400 mt-4 leading-relaxed">
+                    I am always open to collaborating on technical developments, healthcare projects, educational frameworks, or leadership efforts. Reach out via email or connect with me on social platforms.
+                </p>
+                <div class="mt-8 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-indigo-400 w-5"></i>
+                        <span class="text-slate-300">mkabduljebar2262@gmail.com</span>
+                        
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-location-dot text-indigo-400 w-5"></i>
+                        <span class="text-slate-300">Addis Ababa, Ethiopia</span>
+                    </div>
+                  <div class="flex items-center gap-3">
+    <!-- Ikonii LinkedIn kan Brandii (fa-brands) fayyadami -->
+    <i class="fa-brands fa-linkedin text-indigo-400 text-xl w-5"></i>
+    <span class="text-slate-300">LinkedIn</span>
+</div>
+                </div>
+            </div>
+
+            <!-- Form Placeholder -->
+            <form class="space-y-4 text-slate-900">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-xs font-semibold text-slate-400 block mb-1">Your Name</label>
+                        <input type="text" placeholder="Name" class="w-full px-4 py-2.5 rounded bg-slate-800 text-white border border-slate-700 focus:outline-none focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label class="text-xs font-semibold text-slate-400 block mb-1">Email Address</label>
+                        <input type="email" placeholder="Email" class="w-full px-4 py-2.5 rounded bg-slate-800 text-white border border-slate-700 focus:outline-none focus:border-indigo-500">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-slate-400 block mb-1">Message</label>
+                    <textarea rows="4" placeholder="Your Message" class="w-full px-4 py-2.5 rounded bg-slate-800 text-white border border-slate-700 focus:outline-none focus:border-indigo-500"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 bg-indigo-600 text-white rounded font-medium hover:bg-indigo-700 transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-8 text-center text-xs">
+        <p>&copy; <span id="year"></span> Menalkerim Abduljebar Muhammed Abdullah. All rights reserved.</p>
+    </footer>
+
+    <!-- Interactive Tabs Javascript -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function switchTab(tabId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Remove active style from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Show current tab content & activate button
+            document.getElementById(tabId).classList.add('active');
+            
+            // Find the clicked button to add the active class
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
